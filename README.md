@@ -1,5 +1,9 @@
 # Parameter Efficient Fine-Tuning of a Large Language Model on a GPU
 
+> **TL;DR:** Fine-tuned Llama-3.2-3B-Instruct for code generation with LoRA/QLoRA (Unsloth), comparing 5 data- and model-centric variants.
+> The best configuration (`opc-sft-stage2-chat` dataset, r = α = 128) reaches **45.7% pass@1 on HumanEval**, +9.1 pts over the baseline recipe (FineTome-100k, r = 16: 36.6%).
+> **Live demo:** [Hugging Face Space](https://huggingface.co/spaces/samzito12/iris) · KTH ID2223 course project.
+
 This repository is for the lab 2 of the course ID2223/HT2025 of KTH.
 
 We want to perform a Fine-Tuning of an LLM, using a pre-trained model. In particular, we want to do it using Parameter Efficient Fine Tuning with LoRA (Low-Rank Adaptation).
